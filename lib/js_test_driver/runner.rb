@@ -219,6 +219,7 @@ module JsTestDriver
       end
 
       def run
+				puts "Running #{self.to_s} with DISPLAY=#{ENV['DISPLAY']}"
         system(self.to_s)
       end
 
