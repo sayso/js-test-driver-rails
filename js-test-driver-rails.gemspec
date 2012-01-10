@@ -3,12 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "js_test_driver/version"
 
 Gem::Specification.new do |s|
-  s.name        = "js-test-driver-rails"
+  s.name        = "sayso-js-test-driver-rails"
   s.version     = JsTestDriver::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Adam Pohorecki"]
-  s.email       = ["adam@pohorecki.pl"]
-  s.homepage    = "http://github.com/psyho/js-test-driver-rails"
+  s.authors     = ["SaySo"]
+  s.email       = ["sayso@truvolabs.com"]
+  s.homepage    = "http://github.com/sayso/js-test-driver-rails"
   s.summary     = "A wrapper for JsTestDriver for use with ruby/rails projects"
   s.description = "Use ruby to configure JsTestDriver, capture browsers and run tests."
 

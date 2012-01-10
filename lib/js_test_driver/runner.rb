@@ -87,6 +87,7 @@ module JsTestDriver
       command = execute_jar
 
       add_start_server(command)
+			add_runner_mode(command)
       add_with_config(command)
       add_capture_browsers(command, browsers)
       add_run_tests(command, tests)
@@ -104,6 +105,10 @@ module JsTestDriver
 
     def add_start_server(command)
       command.option('--port', config.port)
+    end
+
+    def add_runner_mode(command)
+      command.option('--runnerMode', ENV['RUNNER_MODE']) unless ENV['RUNNER_MODE'].nil? || ENV['RUNNER_MODE'].empty?
     end
 
     def add_run_tests(command, tests)
