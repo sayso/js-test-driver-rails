@@ -1,3 +1,3 @@
 module JsTestDriver
-  VERSION = "0.4.3.001"
+  VERSION = "0.4.3.002"
 end
